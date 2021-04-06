@@ -1,4 +1,4 @@
-[码云](https://gitee.com/kljzndx/joycon-tools-package) | [GitHub](https://github.com/kljzndx/joycon-tools-package)
+[Gitee](https://gitee.com/kljzndx/joycon-tools-package) | [GitHub](https://github.com/kljzndx/joycon-tools-package)
 
 # Included Tools
 
