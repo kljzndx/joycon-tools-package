@@ -54,7 +54,9 @@ initializing threads...
 ## Command template
 
 ```
-XJoy.exe [-q|--quiet|--joycon-abxy-layout|--disable-sl-sr-buttons]
+XJoy.exe [-q | --quiet] [--joycon-abxy-layout] [--disable-sl-sr-buttons] [--left-handed]
+
+--left-handed        Reverse the function of A button and Y button
 ```
 
 ## Customization
