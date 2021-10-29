@@ -54,45 +54,63 @@ initializing threads...
 ## Command template
 
 ```
-XJoy.exe [-q | --quiet] [--joycon-abxy-layout] [--disable-sl-sr-buttons] [--left-handed]
+XJoy [/?] [/L] [/V] [/P[[:]Args]] [/D] [/J] [/R] [/Q]
 
---left-handed        Reverse the function of A button and Y button
+Options:
+/L      List existing joy cons
+/V      Show XJoy version
+/P      Pair by MAC
+Args    Pair formed by -, Pairs separated by ,
+        11:22:33:44:55:66-11:22:33:44:55:66,11:22:33:44:55:66-11:22:33:44:55:66
+/D      Disable SL and SR button
+/J      Use joycon abxy layout
+/R      Reverse the function of A button and Y button
+/Q      Disable log output
+/?      Show this help
 ```
 
 ## Customization
 
 Right now all buttons are hard-coded to their "default" xbox equivalents. If you wish to
-customize these mappings, feel free to modify the `process_button` method in XJoy.cpp. I
-plan to add support for a configuration file and maybe a GUI in later versions. The default
-mappings are shown below:
+customize these mappings, feel free to modify the `process_button` method in XJoy.cpp and
+recompile yourself. I plan to add support for a configuration file and maybe a GUI in later
+versions. The default mappings are shown below:
 
 
-| Joy-Con Button         | Xbox Button                   |
-| ---------------------- | ----------------------------- |
-| A                      | B                             |
-| B                      | A                             |
-| X                      | Y                             |
-| Y                      | X                             |
-| Left Trigger           | Left Trigger                  |
-| Right Trigger          | Right Trigger                 |
-| Left Shoulder          | Left Shoulder                 |
-| Right Shoulder         | Right Shoulder                |
-| D-PAD                  | D-PAD                         |
-| Left Analog            | Left Analog                   |
-| Right Analog           | Right Analog                  |
-| Left Stick             | Left Thumb                    |
-| Right Stick            | Right Thumb                   |
-| Home                   | Start                         |
-| Capture                | Back                          |
-| Plus                   | Home (the "xbox logo" button) |
-| Minus                  | Home (the "xbox logo" button) |
-| SL on left controller  | A                             |
-| SR on left controller  | X                             |
-| SL on right controller | B                             |
-| SR on right controller | Y                             |
+| Joy-Con Button     | Xbox Button    |
+|--------------------|----------------|
+| A                  | B              |
+| B                  | A              |
+| X                  | Y              |
+| Y                  | X              |
+| Left Trigger       | Left Trigger   |
+| Right Trigger      | Right Trigger  |
+| Left Shoulder      | Left Shoulder  |
+| Right Shoulder     | Right Shoulder |
+| D-PAD              | D-PAD          |
+| Left Analog        | Left Analog    |
+| Right Analog       | Right Analog   |
+| Left Stick         | Left Thumb     |
+| Right Stick        | Right Thumb    |
+| Home               | Start          |
+| Capture            | Back           |
+| Plus               | Start          |
+| Minus              | Back           |
+| SL on Joy-Con (L)  | A              |
+| SR on Joy-Con (L)  | X              |
+| SL on Joy-Con (R)  | B              |
+| SR on Joy-Con (R)  | Y              |
 
 ## Building
 
 If you wish to build XJoy yourself, simply install the ViGEm Bus Driver as outlined in the
 installation steps, open the XJoy.sln file in Visual Studio 2017, and build. Everything
 should work out of the box but if it does not feel free to submit an issue.
+
+## Contributing
+1. create a fork for your feature/bugfix/whatever
+2. make your additions/modifications, following our [C++ Coding Style Guidelines](style_guide.md)
+3. test your changes, doing your best to ensure you aren't introducing any environment-specific
+   behavior that may cause issues for users without your exact setup. XJoy's target audience is
+   freshly installed Windows 10 users who have followed the ViGEm installation instructions.
+4. submit a pull request
