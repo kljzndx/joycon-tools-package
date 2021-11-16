@@ -1,21 +1,24 @@
 # XJoy
 
-XJoy allows you to use a pair of Nintendo Joy-Cons as a virtual Xbox 360 controller on Windows.
-
-XJoy is made possible by [ViGEm](https://vigem.org/) and [hidapi](https://github.com/signal11/hidapi).
-
-It was forked and modified from Johnson's https://github.com/sam0x17/XJoy
+XJoy allows you to use a pair of Nintendo Joy-Cons as a virtual Xbox 360 controller
+on Windows. XJoy is made possible by [ViGEm](https://vigem.org/) and
+[hidapi](https://github.com/signal11/hidapi).
 
 ## Support this project
 XJoy is a free product that I work on in my free time, so any contributions are greatly appreciated.
 
 [![](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=8DTF7NWTZX7ZJ)
 
+
+## Note
+Currently the newer versions containing analog support appear to have some issues. I recommend using the last version
+before analog support was introduced [v0.1.8](https://github.com/sam0x17/XJoy/releases/tag/v0.1.8).
+
 ## Installation
 
-1. [Install the ViGEm Bus Driver](https://github.com/ViGEm/ViGEmBus/releases/latest) (install all requirements as well)
+1. [Install the ViGEm Bus Driver](https://github.com/ViGEm/ViGEmBus/releases/tag/v1.16.112) (install all requirements as well)
 2. Install the [Visual C++ Redistributable for Visual Studio 2017](https://go.microsoft.com/fwlink/?LinkId=746572)
-2. Download the latest zip from the [releases page](https://github.com/kljzndx/XJoy/releases) and extract it somewhere permanent like your
+2. Download the latest zip from the [releases page](https://github.com/sam0x17/XJoy/releases) and extract it somewhere permanent like your
 Documents folder
 3. That's it!
 
@@ -49,24 +52,6 @@ initializing threads...
  => right Joy-Con thread started
  => found right Joy-Con
  => successfully connected to right Joy-Con
-```
-
-## Command template
-
-```
-XJoy [/?] [/L] [/V] [/P[[:]Args]] [/D] [/J] [/R] [/Q]
-
-Options:
-/L      List existing joy cons
-/V      Show XJoy version
-/P      Pair by MAC
-Args    Pair formed by -, Pairs separated by ,
-        11:22:33:44:55:66-11:22:33:44:55:66,11:22:33:44:55:66-11:22:33:44:55:66
-/D      Disable SL and SR button
-/J      Use joycon abxy layout
-/R      Reverse the function of A button and Y button
-/Q      Disable log output
-/?      Show this help
 ```
 
 ## Customization
@@ -105,7 +90,8 @@ versions. The default mappings are shown below:
 
 If you wish to build XJoy yourself, simply install the ViGEm Bus Driver as outlined in the
 installation steps, open the XJoy.sln file in Visual Studio 2017, and build. Everything
-should work out of the box but if it does not feel free to submit an issue.
+should work out of the box but if it does not feel free to submit an issue. Note that at
+least on my end it _seems_ to be working in Visual Studio 2019 as well, which is good.
 
 ## Contributing
 1. create a fork for your feature/bugfix/whatever
