@@ -6,7 +6,9 @@
 
 ViGEmBus: https://github.com/ViGEm/ViGEmBus
 
-xjoy: https://github.com/kljzndx/XJoy
+xjoy: https://github.com/DuroSoft/XJoy
+
+Xjoy-Keymap-Generator: https://github.com/kljzndx/Xjoy-Keymap-Generator
 
 ## joycon-driver
 
