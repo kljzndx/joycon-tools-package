@@ -18,4 +18,12 @@ joycon-driver: https://github.com/fossephate/JoyCon-Driver
 
 ## x360ce
 
+ViGEmBus: https://github.com/ViGEm/ViGEmBus
+
 x360ce: https://www.x360ce.com/
+
+## BetterJoy
+
+ViGEmBus: https://github.com/ViGEm/ViGEmBus
+
+BetterJoy: https://github.com/Davidobot/BetterJoy
