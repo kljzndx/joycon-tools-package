@@ -1,0 +1,3 @@
+Only win7 system need to install these components
+
+First install the kb3033929 patch, then open the xbox360.exe to install the driver
