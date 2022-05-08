@@ -2,7 +2,7 @@
 
 # 使用教程
 
-请访问：https://www.bilibili.com/read/cv10678893
+https://www.bilibili.com/read/cv10678893
 
 # 包含的工具
 

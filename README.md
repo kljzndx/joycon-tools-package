@@ -1,5 +1,9 @@
 [Gitee](https://gitee.com/kljzndx/joycon-tools-package) | [GitHub](https://github.com/kljzndx/joycon-tools-package)
 
+# Guide (Chinese)
+
+https://www.bilibili.com/read/cv10678893
+
 # Included Tools
 
 ## xjoy
