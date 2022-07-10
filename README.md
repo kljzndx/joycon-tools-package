@@ -2,7 +2,11 @@
 
 # Guide (Chinese)
 
+Article (old)  
 https://www.bilibili.com/read/cv10678893
+
+Video  
+https://www.bilibili.com/video/BV1wv4y1M71P
 
 # Included Tools
 

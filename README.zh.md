@@ -2,7 +2,11 @@
 
 # 使用教程
 
+旧文章  
 https://www.bilibili.com/read/cv10678893
+
+视频  
+https://www.bilibili.com/video/BV1wv4y1M71P
 
 # 包含的工具
 
